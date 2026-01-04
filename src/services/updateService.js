@@ -1,7 +1,7 @@
 // Update checker service - checks GitHub releases for new versions
 
 const GITHUB_REPO = 'RichardReynoldsRE/nonopixelo'
-const CURRENT_VERSION = '1.0.0'
+const CURRENT_VERSION = '1.0.1'
 
 // Parse version string to comparable numbers
 function parseVersion(versionStr) {

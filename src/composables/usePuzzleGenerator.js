@@ -109,9 +109,18 @@ function countNeighbors(grid, r, c, size) {
   return count
 }
 
+// Get local date string (YYYY-MM-DD)
+function getLocalDateString() {
+  const now = new Date()
+  const year = now.getFullYear()
+  const month = String(now.getMonth() + 1).padStart(2, '0')
+  const day = String(now.getDate()).padStart(2, '0')
+  return `${year}-${month}-${day}`
+}
+
 // Generate daily puzzle based on date
 export function getDailyPuzzle(dateString = null) {
-  const date = dateString || new Date().toISOString().split('T')[0]
+  const date = dateString || getLocalDateString()
 
   // Check for a scheduled puzzle first
   const scheduled = getScheduledPuzzle(date)
