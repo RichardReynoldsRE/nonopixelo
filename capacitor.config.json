@@ -1,0 +1,8 @@
+{
+  "appId": "com.nonopixelo.game",
+  "appName": "Nonopixelo",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  }
+}
